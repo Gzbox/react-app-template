@@ -3,6 +3,7 @@ import { Button, Form, type FormProps, Input, Card, Typography } from "antd";
 import { useNavigate } from "react-router-dom";
 import { loginApi } from "@/service/api";
 import { setLocalStorage } from "@/utils";
+import LogoContent from "@/components/LogoContent";
 
 type FieldType = {
   username?: string;
@@ -44,13 +45,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <Card
-      title={
-        <Typography.Title level={4} className="text-center">
-          React App Template
-        </Typography.Title>
-      }
-    >
+    <Card title={<LogoContent />}>
       <Form
         layout="vertical"
         style={{ minWidth: 300 }}

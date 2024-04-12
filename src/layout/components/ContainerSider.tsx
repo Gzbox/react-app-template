@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Layout } from "antd";
+import { Button, Layout, theme } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import {
   MENU_WIDTH,
@@ -9,6 +9,7 @@ import {
 } from "../../styles/theme";
 
 const ContainerSider = (props: { children: React.ReactNode }) => {
+  const { token } = theme.useToken();
   const [collapsed, setCollapsed] = useState(false);
 
   const onCollapse = () => {
@@ -38,7 +39,11 @@ const ContainerSider = (props: { children: React.ReactNode }) => {
     >
       <div className="flex flex-col h-full">
         <div className="flex-1 overflow-auto">{props.children}</div>
-        <div className="p-2">
+        <div
+          style={{
+            borderTop: `1px solid ${token.colorBorderSecondary}`,
+          }}
+        >
           <Button
             type="text"
             size="small"

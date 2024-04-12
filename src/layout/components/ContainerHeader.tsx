@@ -9,6 +9,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { FIXED_HEADER, NAV_HEIGHT } from "../../styles/theme";
 import { clearLocalStorage } from "@/utils";
+import LogoContent from "@/components/LogoContent";
 
 const ContainerHeader = () => {
   const { token } = theme.useToken();
@@ -69,13 +70,7 @@ const ContainerHeader = () => {
             }),
       }}
     >
-      <div
-        onClick={() => redirectTo("/")}
-        className="flex justify-center items-center gap-3 cursor-pointer"
-      >
-        <img src={import.meta.env.VITE_FAVICON} alt="logo" />
-        <h1 className="font-bold text-lg">{import.meta.env.VITE_TITLE}</h1>
-      </div>
+      <LogoContent onClick={() => redirectTo("/")} />
       <div>
         <Space
           direction="horizontal"

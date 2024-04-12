@@ -21,7 +21,7 @@ const ContainerMenu = () => {
   return (
     <Menu
       mode="inline"
-      defaultSelectedKeys={[pathname]}
+      selectedKeys={[pathname]}
       items={menuItems}
       onClick={({ key }) => {
         navigator(key);
