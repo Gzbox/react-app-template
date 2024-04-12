@@ -2,7 +2,7 @@
 
 ## ⚡ 简介
 
-React App Template 是一个免费开源的React中后台管理系统模板，基于 `React18`、`TypeScript`、`Ant Design`、`Tailwind CSS` 和 `Vite` 等主流技术
+React App Template 是一个免费开源的React中后台管理系统模板，基于 `React18`、`React Router V6`、`TypeScript`、`Ant Design`、`Tailwind CSS` 和 `Vite` 等主流技术
 
 ## 特性
 
