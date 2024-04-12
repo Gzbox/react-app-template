@@ -56,6 +56,11 @@ pnpm build
 pnpm lint && pnpm format
 ```
 
+## 项目预览图
+
+![preview1.png](./login.png)
+![preview2.png](./home.png)
+
 ## Git 提交规范参考
 
 - `feat` 增加新的业务功能

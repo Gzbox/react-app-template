@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, type FormProps, Input, Card } from "antd";
+import { Button, Form, type FormProps, Input, Card, Typography } from "antd";
 import { useNavigate } from "react-router-dom";
 import { loginApi } from "@/service/api";
 import { setLocalStorage } from "@/utils";
@@ -44,7 +44,13 @@ const Login: React.FC = () => {
   };
 
   return (
-    <Card>
+    <Card
+      title={
+        <Typography.Title level={4} className="text-center">
+          React App Template
+        </Typography.Title>
+      }
+    >
       <Form
         layout="vertical"
         style={{ minWidth: 300 }}
